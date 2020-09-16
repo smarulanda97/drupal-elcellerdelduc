@@ -3,7 +3,7 @@
 ## PACKAGES
 * Drupal
 * Drupal Commerce
-* Boostrap Sass
+* Bootstrap Sass
 
 ## IMPORTANT
 - Download files.zip directory from my Google drive [Download files.zip](https://drive.google.com/file/d/1pDhlGamrG0UXOAKi6co91Th_H3Qa0j4j/view?usp=sharing).
