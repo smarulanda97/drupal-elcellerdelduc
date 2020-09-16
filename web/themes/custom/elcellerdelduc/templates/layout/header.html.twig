@@ -1,0 +1,38 @@
+<header class="header">
+  {% block head %}
+    {% if page.top_header or page.top_header_form %}
+      <div id="header--top d-flex align-items-center">
+        {% if container_navbar %}
+          {% if page.top_header %}
+            {{ page.top_header }}
+          {% endif %}
+          {% if page.top_header_form %}
+            {{ page.top_header_form }}
+          {% endif %}
+        {% endif %}
+      </div>
+    {% endif %}
+    {% if page.header or page.primary_menu or page.header_form %}
+      <div class="header--bottom w-100">
+        <nav {{ navbar_attributes.addClass('stickable') }}>
+          {% if page.header %}
+            {{ page.header }}
+          {% endif %}
+          {% if page.primary_menu %}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu--main" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="menu--main">
+              {{ page.primary_menu }}
+              {% if page.header_form %}
+                <div class="form-inline navbar-form justify-content-end">
+                  {{ page.header_form }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+        </nav>
+      </div>
+    {% endif %}
+  {% endblock %}
+</header>

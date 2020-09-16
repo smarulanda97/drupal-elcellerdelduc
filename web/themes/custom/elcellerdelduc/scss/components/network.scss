@@ -1,0 +1,27 @@
+.network {
+  padding: 1em 0 2em 0;
+  border-bottom: $border-white-transparent;
+
+  &--list {
+    text-align: center;
+  }
+
+  &--item {
+    margin: 0 .62em !important;
+  }
+
+  &--link {
+    display: block;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, .75);
+    padding: $padding-base * .7 $padding-base * .8;
+
+    &:hover {
+      background-color: $primary-shade;
+    }
+  }
+
+  &--img {
+    max-height: 24px;
+  }
+}

@@ -1,0 +1,36 @@
+/**
+ * Theme Name: El Celler Del Duc
+*/
+@import "import";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: $white;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#page {
+  overflow-x: hidden;
+}
+
+.view-id-frontpage {
+  display: none;
+}
+
+.tooltip-inner {
+  background-color: $primary-shade;
+}
+
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before {
+  border-top-color: $primary-shade;
+}

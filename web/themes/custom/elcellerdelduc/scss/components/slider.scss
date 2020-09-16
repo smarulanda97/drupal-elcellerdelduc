@@ -1,0 +1,116 @@
+.slider {
+
+  &--content {
+    overflow: hidden;
+    height: calc(100vh - 50px);
+    @include respond-below(xs) {
+      height: calc(100vh - 40vh);
+    }
+    @include respond-between(xs, sm) {
+      height: calc(100vh - 30vh);
+    }
+    @include respond-between(sm, lg) {
+      height: calc(100vh - 40vh);
+    }
+  }
+
+  &--item {
+    visibility: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &--caption {
+    top: 40%;
+    width: 100%;
+    position: absolute;
+    @include respond-below(sm) {
+      top: 50%;
+    }
+  }
+
+  &--caption_full {
+    margin: 0 auto;
+    @include respond-below(sm) {
+      width: 80%;
+    }
+    @include respond-above(sm) {
+      width: 70%;
+    }
+  }
+
+  &--title {
+    text-transform: uppercase;
+
+    @include respond-below(xs) {
+      font-size: $font-size-base * 2;
+    }
+    @include respond-between(xs, lg) {
+      font-size: $font-size-base * 3.5;
+    }
+    @include respond-above(lg) {
+      font-size: $font-size-base * 5;
+    }
+  }
+
+  &--subtitle {
+    font-size: $font-size-base * 1.4 !important;
+    text-transform: uppercase;
+    position: relative;
+    @include respond-below(sm) {
+      padding: $padding-base  $padding-base * 3;
+    }
+    @include respond-above(sm) {
+      padding: $padding-base  $padding-base * 11;
+    }
+
+    &:before, &:after {
+      top: 50%;
+      content: '';
+      height: 3px;
+      z-index: 1000;
+      display: block;
+      color: #c5a572;
+      position: absolute;
+      background: #c5a572;
+      @include respond-below(sm) {
+        width: 30px;
+      }
+      @include respond-above(sm) {
+        width: 100px;
+      }
+    }
+
+    &:before {
+      @include respond-below(sm) {
+        left: -10px;
+      }
+      @include respond-above(sm) {
+        left: 0;
+      }
+    }
+
+    &:after {
+      @include respond-below(sm) {
+        right: -10px;
+      }
+      @include respond-above(sm) {
+        right: 0;
+      }
+    }
+  }
+
+  &--desc {
+    letter-spacing: 0;
+    line-height: 20px;
+    white-space: nowrap;
+    color: rgb(224, 224, 224);
+  }
+
+  .slick-list, .slick-track, .slick-slide {
+    height: 100%;
+    width: 100%;
+  }
+
+}

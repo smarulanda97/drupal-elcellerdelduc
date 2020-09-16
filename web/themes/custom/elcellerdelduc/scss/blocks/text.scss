@@ -1,0 +1,45 @@
+.text {
+  &--golden {
+    color: $primary-shade !important;
+  }
+
+  &--blue {
+    color: $secondary-shade !important;
+  }
+
+  &--600 {
+    font-weight: 600 !important;
+  }
+
+  &--400 {
+    font-weight: 400 !important;
+  }
+
+  &--monserrat {
+    font-family: $font-family-monserrat !important;
+  }
+
+  &--bellefair {
+    font-family: $font-bellefair !important;
+  }
+
+  &--golden_600 {
+    @extend .text--golden;
+    @extend .text--600;
+  }
+
+  &--golden_400 {
+    @extend .text--golden;
+    @extend .text--400;
+  }
+
+  &--blue_600 {
+    @extend .text--blue;
+    @extend .text--600;
+  }
+
+  &--blue_600 {
+    @extend .text--blue;
+    @extend .text--600;
+  }
+}

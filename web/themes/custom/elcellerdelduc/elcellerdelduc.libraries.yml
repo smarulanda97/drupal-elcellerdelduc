@@ -1,0 +1,30 @@
+global-styling:
+  version: VERSION
+  js:
+    js/popper.min.js: {}
+    js/bootstrap.min.js: {}
+    js/global.js: {}
+  css:
+    component:
+      css/style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/jquery.once
+slick-slider:
+  version: 1.x
+  css:
+    layout:
+      libraries/css/slick.css: {}
+    theme:
+      libraries/css/slick-theme.css: {}
+  js:
+    libraries/js/slick.min.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+font-awesome:
+  version: 6.x
+  js:
+    //kit.fontawesome.com/8ad2945567.js: { type: external }
+

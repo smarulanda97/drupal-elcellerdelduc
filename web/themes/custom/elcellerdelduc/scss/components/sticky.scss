@@ -1,0 +1,39 @@
+.sticky {
+  right: 5%;
+  bottom: 10%;
+  z-index: 10;
+  position: fixed;
+
+  &--link {
+    width: 6.5rem;
+    display: block;
+    padding: 22px;
+    height: 6.5rem;
+    text-align: center;
+    background-color: rgba(1, 14, 26, 0.80);
+
+    img {
+      height: 2.5rem;
+      margin: 0 !important;
+    }
+
+    &_round {
+      @extend .sticky--link;
+
+      border-radius: 50%;
+
+      &_gold {
+        @extend .sticky--link;
+        @extend .sticky--link_round;
+
+        border: solid 2px $primary-shade;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+      }
+    }
+
+  }
+
+  &--text {
+    color: $white;
+  }
+}

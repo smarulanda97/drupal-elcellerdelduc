@@ -1,0 +1,28 @@
+<footer class="footer d-flex flex-column position-relative">
+  <div class="footer--bglayer"></div>
+  <div class="footer--top container">
+    {% block footer %}
+      {% if page.featured_bottom_first %}
+        <section class="row justify-content-center position-relative ">
+          {{ page.featured_bottom_first }}
+        </section>
+      {% endif %}
+      {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+        <section class="footer--grid row justify-content-center">
+          {{ page.footer_first }}
+          {{ page.footer_second }}
+          {{ page.footer_third }}
+          {{ page.footer_fourth }}
+        </section>
+      {% endif %}
+    {% endblock %}
+  </div>
+  {% if page.footer_fifth %}
+    <div class="footer--bottom container-fluid position-relative">
+      <div class="footer--bglayer_bottom"></div>
+      <section class="row justify-content-center">
+        {{ page.footer_fifth }}
+      </section>
+    </div>
+  {% endif %}
+</footer>
