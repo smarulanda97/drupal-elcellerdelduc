@@ -6,8 +6,8 @@
 * Boostrap Sass
 
 ## IMPORTANT
-- Download files.zip directory from my Google drive [Download files.zip](https://drive.google.com/file/d/1Glha_Dzj44NWDybusB-JNMzpd9UfHEW2/view?usp=sharing).
-- Download database.sql.zip with project configuration from my Google drive [Download database.sql.zip](https://drive.google.com/file/d/1pDhlGamrG0UXOAKi6co91Th_H3Qa0j4j/view?usp=sharing).
+- Download files.zip directory from my Google drive [Download files.zip](https://drive.google.com/file/d/1pDhlGamrG0UXOAKi6co91Th_H3Qa0j4j/view?usp=sharing).
+- Download database.sql.zip with project configuration from my Google drive [Download database.sql.zip](https://drive.google.com/file/d/1Glha_Dzj44NWDybusB-JNMzpd9UfHEW2/view?usp=sharing).
 
 ## INSTALLATION PROCESS
 * `composert install` Install dependencies and missing project scaffold files.
